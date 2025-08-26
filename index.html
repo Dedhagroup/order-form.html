@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodeloom Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+    }
+    .form-container {
+      max-width: 450px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .note {
+      font-size: 13px;
+      color: #444;
+      margin-top: 15px;
+      background: #f0f8ff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo">Moodeloom</div>
+    <h2>Order Form</h2>
+
+    <!-- Order Form -->
+    <form action="https://script.google.com/macros/s/AKfycbwE4Vz1z17G5OkAPfOaqM6S_i5IZcJG-rE1Y4kMRAmbfatYs_TD4dKZMmd5s5zs6nMV/exec" method="POST">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="size">T-Shirt Size</label>
+      <select id="size" name="tshirt_size" required>
+        <option value="">-- Select Size --</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <label for="jeans">Jeans Size</label>
+      <select id="jeans" name="jeans_size" required>
+        <option value="">-- Select Size --</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+        <option value="32">32</option>
+        <option value="34">34</option>
+        <option value="36">36</option>
+        <option value="38">38</option>
+      </select>
+
+      <label>Payment Method</label>
+      <input type="radio" id="cod" name="payment" value="Cash on Delivery" checked>
+      <label for="cod">Cash on Delivery</label>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <div class="note">
+      <b>Return Policy:</b><br>
+      You will get a return option only after the order is delivered to you.  
+      A return link will be provided, you can raise the issue there.  
+      Your refund will be processed within 24 hours.  
+    </div>
+  </div>
+</body>
+</html>
